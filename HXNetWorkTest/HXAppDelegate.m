@@ -7,6 +7,7 @@
 //
 
 #import "HXAppDelegate.h"
+#import "HXRootViewController.h"
 
 @implementation HXAppDelegate
 
@@ -16,6 +17,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    HXRootViewController *rootViewController = [[HXRootViewController alloc] init];
+    
+    self.window.rootViewController = rootViewController;
+    
     return YES;
 }
 
